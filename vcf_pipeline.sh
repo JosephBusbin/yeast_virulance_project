@@ -13,9 +13,10 @@ set -ueo pipefail
 # Pipeline Variables
 # Usage: ./run_pipeline.sh <SAMPLE_NAME> <OUTPUT_DIR>
 # ==============================================================================
-SAMPLE="${1:-sample1}"
-OUT_DIR="${2:-output}"
-REF_FASTA="reference.fasta"
+
+SAMPLE="${1:-./data/raw/B02-A8a2-2338_S5_L002_R1_001.fastq}"
+OUT_DIR="${2:-/sciclone/scr10/jbusbin/yeast_vir_proj_output/}"
+REF_FASTA="./data/reference/Anc8.genome.fasta"
 FASTQ_R1="${SAMPLE}.fastq.gz"
 THREADS=8
 
