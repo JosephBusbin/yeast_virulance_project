@@ -1,0 +1,1246 @@
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 1057558 sequences (80000096 bp)...
+[M::process] read 1057570 sequences (80000106 bp)...
+[M::mem_process_seqs] Processed 1057558 reads in 37.657 CPU sec, 4.800 real sec
+[M::mem_process_seqs] Processed 1057570 reads in 37.183 CPU sec, 5.256 real sec
+[M::process] read 1057568 sequences (80000108 bp)...
+[M::mem_process_seqs] Processed 1057568 reads in 37.092 CPU sec, 5.218 real sec
+[M::process] read 1057560 sequences (80000040 bp)...
+[M::mem_process_seqs] Processed 1057560 reads in 37.028 CPU sec, 5.062 real sec
+[M::process] read 1057562 sequences (80000148 bp)...
+[M::mem_process_seqs] Processed 1057562 reads in 37.012 CPU sec, 5.081 real sec
+[M::process] read 1057566 sequences (80000015 bp)...
+[M::mem_process_seqs] Processed 1057566 reads in 37.086 CPU sec, 5.092 real sec
+[M::process] read 899580 sequences (68048312 bp)...
+[M::mem_process_seqs] Processed 899580 reads in 31.318 CPU sec, 4.282 real sec
+[main] Version: 0.7.18-r1243-dirty
+[main] CMD: bwa mem -t 8 ./data/reference/Anc8.genome.fasta ./data/raw/B02-A8a2-2338_S5_L002_R1_001.fastq
+[main] Real time: 115.270 sec; CPU: 261.236 sec
+[bam_sort_core] merging from 0 files and 8 in-memory blocks...
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar AddOrReplaceReadGroups -I /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.sorted.mem.bam -O /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.sorted.rg.bam -RGPL illumina -RGID B02-A8a2-2338_S5_L002_R1_001 -RGPU unit1 -RGLB Murphy_Lab -RGSM B02-A8a2-2338_S5_L002_R1_001
+14:44:02.828 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Thu Nov 05 14:44:02 EST 2026] AddOrReplaceReadGroups --INPUT /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.sorted.mem.bam --OUTPUT /sciclone/scr10/jbusbin/yeast_vir_proj_output/B02-A8a2-2338_S5_L002_R1_001.sorted.rg.bam --RGID B02-A8a2-2338_S5_L002_R1_001 --RGLB Murphy_Lab --RGPL illumina --RGPU unit1 --RGSM B02-A8a2-2338_S5_L002_R1_001 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Thu Nov 05 14:44:03 EST 2026] Executing as jbusbin@bo20.sciclone.wm.edu on Linux 5.14.0-687.15.1.el9_8.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 23.0.2+7-58; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.6.1.0
+INFO	2026-11-05 14:44:03	AddOrReplaceReadGroups	Created read-group ID=B02-A8a2-2338_S5_L002_R1_001 PL=illumina LB=Murphy_Lab SM=B02-A8a2-2338_S5_L002_R1_001
+
+INFO	2026-11-05 14:44:06	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:02s.  Time for last 1,000,000:    2s.  Last read position: 4:327,836
+INFO	2026-11-05 14:44:08	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:05s.  Time for last 1,000,000:    2s.  Last read position: 6:73,674
+INFO	2026-11-05 14:44:11	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:07s.  Time for last 1,000,000:    2s.  Last read position: 8:455,794
+INFO	2026-11-05 14:44:13	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:00:10s.  Time for last 1,000,000:    2s.  Last read position: 11:375,649
+INFO	2026-11-05 14:44:16	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:00:12s.  Time for last 1,000,000:    2s.  Last read position: 13:249,489
+INFO	2026-11-05 14:44:18	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:    2s.  Last read position: 15:305,678
+INFO	2026-11-05 14:44:20	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:00:17s.  Time for last 1,000,000:    2s.  Last read position: 17:18,619
+[Thu Nov 05 14:44:21 EST 2026] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 0.32 minutes.
+Runtime.totalMemory()=1140850688
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar MarkDuplicates -I /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.sorted.rg.bam -O /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.markdup.rg.bam -M /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.dup_metrics.txt --REMOVE_DUPLICATES true --CREATE_INDEX true
+14:44:23.666 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Thu Nov 05 14:44:23 EST 2026] MarkDuplicates --INPUT /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.sorted.rg.bam --OUTPUT /sciclone/scr10/jbusbin/yeast_vir_proj_output/B02-A8a2-2338_S5_L002_R1_001.markdup.rg.bam --METRICS_FILE /sciclone/scr10/jbusbin/yeast_vir_proj_output/B02-A8a2-2338_S5_L002_R1_001.dup_metrics.txt --REMOVE_DUPLICATES true --CREATE_INDEX true --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --FLOW_MODE false --FLOW_DUP_STRATEGY FLOW_QUALITY_SUM_STRATEGY --FLOW_USE_END_IN_UNPAIRED_READS false --FLOW_USE_UNPAIRED_CLIPPED_END false --FLOW_UNPAIRED_END_UNCERTAINTY 0 --FLOW_UNPAIRED_START_UNCERTAINTY 0 --FLOW_SKIP_FIRST_N_FLOWS 0 --FLOW_Q_IS_KNOWN_END false --FLOW_EFFECTIVE_QUALITY_THRESHOLD 15 --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Thu Nov 05 14:44:23 EST 2026] Executing as jbusbin@bo20.sciclone.wm.edu on Linux 5.14.0-687.15.1.el9_8.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 23.0.2+7-58; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.6.1.0
+INFO	2026-11-05 14:44:23	MarkDuplicates	Start of doWork freeMemory: 88329872; totalMemory: 117440512; maxMemory: 31675383808
+INFO	2026-11-05 14:44:23	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2026-11-05 14:44:23	MarkDuplicates	Will retain up to 114765883 data points before spilling to disk.
+INFO	2026-11-05 14:44:26	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:02s.  Time for last 1,000,000:    2s.  Last read position: 4:327,836
+INFO	2026-11-05 14:44:26	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:29	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:04s.  Time for last 1,000,000:    2s.  Last read position: 6:73,674
+INFO	2026-11-05 14:44:29	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:31	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:07s.  Time for last 1,000,000:    2s.  Last read position: 8:455,794
+INFO	2026-11-05 14:44:31	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:33	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:09s.  Time for last 1,000,000:    2s.  Last read position: 11:375,649
+INFO	2026-11-05 14:44:33	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:35	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:00:11s.  Time for last 1,000,000:    2s.  Last read position: 13:249,489
+INFO	2026-11-05 14:44:35	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:37	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:00:13s.  Time for last 1,000,000:    2s.  Last read position: 15:305,678
+INFO	2026-11-05 14:44:37	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:40	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:00:15s.  Time for last 1,000,000:    2s.  Last read position: 17:18,619
+INFO	2026-11-05 14:44:40	MarkDuplicates	Tracking 0 as yet unmatched pairs. 0 records in RAM.
+INFO	2026-11-05 14:44:40	MarkDuplicates	Read 7132095 records. 0 pairs never matched.
+INFO	2026-11-05 14:44:40	MarkDuplicates	After buildSortedReadEndLists freeMemory: 2601699576; totalMemory: 4093640704; maxMemory: 31675383808
+INFO	2026-11-05 14:44:40	MarkDuplicates	Will retain up to 989855744 duplicate indices before spilling to disk.
+INFO	2026-11-05 14:44:45	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2026-11-05 14:44:45	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2026-11-05 14:44:46	MarkDuplicates	Sorting list of duplicate records.
+INFO	2026-11-05 14:44:46	MarkDuplicates	After generateDuplicateIndexes freeMemory: 7194718976; totalMemory: 15166603264; maxMemory: 31675383808
+INFO	2026-11-05 14:44:46	MarkDuplicates	Marking 1270466 records as duplicates.
+INFO	2026-11-05 14:44:46	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2026-11-05 14:44:46	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2026-11-05 14:45:03	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2026-11-05 14:45:03	MarkDuplicates	Duplicate Index cleanup.
+INFO	2026-11-05 14:45:03	MarkDuplicates	Getting Memory Stats.
+INFO	2026-11-05 14:45:03	MarkDuplicates	Before output close freeMemory: 406380464; totalMemory: 452984832; maxMemory: 31675383808
+INFO	2026-11-05 14:45:03	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2026-11-05 14:45:03	MarkDuplicates	After output close freeMemory: 135005528; totalMemory: 167772160; maxMemory: 31675383808
+[Thu Nov 05 14:45:03 EST 2026] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.66 minutes.
+Runtime.totalMemory()=167772160
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar HaplotypeCaller -R ./data/reference/Anc8.genome.fasta -I /sciclone/scr10/jbusbin/yeast_vir_proj_output//B02-A8a2-2338_S5_L002_R1_001.markdup.rg.bam -O /sciclone/scr10/jbusbin/yeast_vir_proj_output//raw_vcf/B02-A8a2-2338_S5_L002_R1_001.gatk.vcf
+14:45:05.903 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.apache.logging.slf4j.SLF4JServiceProvider@4662752a]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@693f2213]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.apache.logging.slf4j.SLF4JServiceProvider@4662752a]
+14:45:06.094 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:45:06.100 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.6.1.0
+14:45:06.100 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:45:06.100 INFO  HaplotypeCaller - Executing as jbusbin@bo20.sciclone.wm.edu on Linux v5.14.0-687.15.1.el9_8.x86_64 amd64
+14:45:06.100 INFO  HaplotypeCaller - Java runtime: Java HotSpot(TM) 64-Bit Server VM v23.0.2+7-58
+14:45:06.101 INFO  HaplotypeCaller - Start Date/Time: November 5, 2026, 2:45:05 PM EST
+14:45:06.101 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:45:06.101 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:45:06.102 INFO  HaplotypeCaller - HTSJDK Version: 4.1.3
+14:45:06.102 INFO  HaplotypeCaller - Picard Version: 3.3.0
+14:45:06.102 INFO  HaplotypeCaller - Built for Spark Version: 3.5.0
+14:45:06.104 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:45:06.105 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:45:06.105 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:45:06.105 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:45:06.105 INFO  HaplotypeCaller - Deflater: IntelDeflater
+14:45:06.105 INFO  HaplotypeCaller - Inflater: IntelInflater
+14:45:06.105 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+14:45:06.105 INFO  HaplotypeCaller - Requester pays: disabled
+14:45:06.106 INFO  HaplotypeCaller - Initializing engine
+14:45:06.288 INFO  HaplotypeCaller - Done initializing engine
+14:45:06.297 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+14:45:06.299 INFO  NativeLibraryLoader - Loading libgkl_smithwaterman.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_smithwaterman.so
+14:45:06.300 INFO  SmithWatermanAligner - Using AVX accelerated SmithWaterman implementation
+14:45:06.303 INFO  HaplotypeCallerEngine - Disabling physical phasing, which is supported only for reference-model confidence output
+14:45:06.313 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+14:45:06.331 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+14:45:06.332 INFO  IntelPairHmm - Available threads: 8
+14:45:06.332 INFO  IntelPairHmm - Requested threads: 4
+14:45:06.332 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+14:45:06.377 INFO  ProgressMeter - Starting traversal
+14:45:06.378 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+14:45:06.794 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated at position 1:115 and possibly subsequent; at least 10 samples must have called genotypes
+14:45:16.382 INFO  ProgressMeter -              1:41832              0.2                   340           2039.4
+14:45:26.390 INFO  ProgressMeter -             1:156896              0.3                  1200           3597.8
+14:45:36.400 INFO  ProgressMeter -             2:117527              0.5                  2340           4676.6
+14:45:46.446 INFO  ProgressMeter -             2:386743              0.7                  3780           5660.4
+14:45:56.477 INFO  ProgressMeter -             2:658829              0.8                  5220           6251.6
+14:46:06.678 INFO  ProgressMeter -              3:51665              1.0                  6320           6288.6
+14:46:16.690 INFO  ProgressMeter -             3:204799              1.2                  7340           6263.5
+14:46:27.409 INFO  ProgressMeter -             3:300262              1.4                  8010           5931.1
+14:46:37.441 INFO  ProgressMeter -             4:192122              1.5                  9170           6042.0
+14:46:47.507 INFO  ProgressMeter -             4:478176              1.7                 10840           6431.4
+14:46:57.707 INFO  ProgressMeter -             4:643558              1.9                 11830           6375.7
+14:47:07.747 INFO  ProgressMeter -             4:904551              2.0                 13410           6629.4
+14:47:17.841 INFO  ProgressMeter -            4:1109464              2.2                 14820           6763.9
+14:47:27.860 INFO  ProgressMeter -            4:1344982              2.4                 16140           6844.7
+14:47:37.978 INFO  ProgressMeter -            4:1492439              2.5                 17180           6799.5
+14:47:48.030 INFO  ProgressMeter -              5:62409              2.7                 17880           6636.5
+14:47:58.059 INFO  ProgressMeter -             5:197071              2.9                 18800           6570.3
+14:48:08.106 INFO  ProgressMeter -             5:401084              3.0                 20020           6609.9
+14:48:18.178 INFO  ProgressMeter -              6:71914              3.2                 21320           6669.4
+14:48:28.233 INFO  ProgressMeter -             6:235691              3.4                 22270           6619.6
+14:48:38.407 INFO  ProgressMeter -             7:423332              3.5                 24350           6890.6
+14:48:48.643 INFO  ProgressMeter -             7:698288              3.7                 25960           7007.9
+14:48:58.706 INFO  ProgressMeter -             7:881653              3.9                 27100           6998.7
+14:49:08.775 INFO  ProgressMeter -              8:51948              4.0                 28350           7017.4
+14:49:18.829 INFO  ProgressMeter -             8:247015              4.2                 29560           7025.5
+14:49:28.853 INFO  ProgressMeter -             8:434952              4.4                 30760           7031.5
+14:49:38.919 INFO  ProgressMeter -             9:201824              4.5                 32190           7086.6
+14:49:49.143 INFO  ProgressMeter -             9:386955              4.7                 33300           7065.9
+14:49:59.180 INFO  ProgressMeter -             10:97580              4.9                 34190           7006.1
+14:50:09.187 INFO  ProgressMeter -            10:254590              5.0                 35310           6996.5
+14:50:19.230 INFO  ProgressMeter -            10:460854              5.2                 36660           7030.8
+14:50:29.269 INFO  ProgressMeter -            10:647125              5.4                 37800           7024.1
+14:50:39.410 INFO  ProgressMeter -            11:141854              5.6                 39200           7062.4
+14:50:49.466 INFO  ProgressMeter -            11:308114              5.7                 40340           7054.7
+14:50:59.468 INFO  ProgressMeter -            11:466423              5.9                 41470           7046.9
+14:51:09.593 INFO  ProgressMeter -            11:618789              6.1                 42570           7032.2
+14:51:19.832 INFO  ProgressMeter -             12:94866              6.2                 43500           6988.8
+14:51:29.856 INFO  ProgressMeter -            12:296051              6.4                 44720           6997.0
+14:51:39.865 INFO  ProgressMeter -            12:988765              6.6                 47540           7249.0
+14:51:50.078 INFO  ProgressMeter -            13:133860              6.7                 48770           7248.5
+14:52:00.154 INFO  ProgressMeter -            13:371352              6.9                 50200           7279.3
+14:52:10.466 INFO  ProgressMeter -            13:563141              7.1                 51490           7284.8
+14:52:20.593 INFO  ProgressMeter -            13:766150              7.2                 52790           7294.5
+14:52:30.805 INFO  ProgressMeter -             14:17011              7.4                 53800           7263.3
+14:52:40.865 INFO  ProgressMeter -            14:232434              7.6                 55060           7268.9
+14:52:51.061 INFO  ProgressMeter -            14:421645              7.7                 56330           7273.3
+14:53:01.075 INFO  ProgressMeter -            14:575184              7.9                 57380           7252.6
+14:53:11.223 INFO  ProgressMeter -             15:22326              8.1                 58730           7267.9
+14:53:21.243 INFO  ProgressMeter -            15:223721              8.2                 59940           7267.4
+14:53:31.249 INFO  ProgressMeter -            15:443368              8.4                 61300           7285.0
+14:53:41.385 INFO  ProgressMeter -            15:779862              8.6                 63010           7340.9
+14:53:51.412 INFO  ProgressMeter -           15:1074036              8.8                 64600           7382.4
+14:54:01.470 INFO  ProgressMeter -            16:128455              8.9                 65450           7338.9
+14:54:11.649 INFO  ProgressMeter -            16:296390              9.1                 66630           7331.8
+14:54:21.700 INFO  ProgressMeter -            16:500819              9.3                 67920           7338.5
+14:54:31.747 INFO  ProgressMeter -            16:674080              9.4                 69070           7330.1
+14:54:41.920 INFO  ProgressMeter -            16:870539              9.6                 70410           7340.2
+14:54:50.024 INFO  HaplotypeCaller - 319393 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+0 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+319393 total reads filtered out of 5861629 reads processed
+14:54:50.025 INFO  ProgressMeter -             17:85142              9.7                 71320           7331.8
+14:54:50.025 INFO  ProgressMeter - Traversal complete. Processed 71320 total regions in 9.7 minutes.
+14:54:50.099 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.888299704
+14:54:50.099 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 96.17261934700001
+14:54:50.099 INFO  SmithWatermanAligner - Total compute time in native Smith-Waterman : 162.91 sec
+14:54:50.100 INFO  HaplotypeCaller - Shutting down engine
+[November 5, 2026, 2:54:50 PM EST] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 9.74 minutes.
+Runtime.totalMemory()=1140850688
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar VariantFiltration -R ./data/reference/Anc8.genome.fasta -V /sciclone/scr10/jbusbin/yeast_vir_proj_output//raw_vcf/B02-A8a2-2338_S5_L002_R1_001.gatk.vcf -O /sciclone/scr10/jbusbin/yeast_vir_proj_output//filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.Filtered.vcf --filter-name snpsFilter1 --filter-expression QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0
+14:54:52.219 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.apache.logging.slf4j.SLF4JServiceProvider@4ee8051c]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@53125718]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.apache.logging.slf4j.SLF4JServiceProvider@4ee8051c]
+14:54:52.344 INFO  VariantFiltration - ------------------------------------------------------------
+14:54:52.347 INFO  VariantFiltration - The Genome Analysis Toolkit (GATK) v4.6.1.0
+14:54:52.347 INFO  VariantFiltration - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:54:52.347 INFO  VariantFiltration - Executing as jbusbin@bo20.sciclone.wm.edu on Linux v5.14.0-687.15.1.el9_8.x86_64 amd64
+14:54:52.348 INFO  VariantFiltration - Java runtime: Java HotSpot(TM) 64-Bit Server VM v23.0.2+7-58
+14:54:52.348 INFO  VariantFiltration - Start Date/Time: November 5, 2026, 2:54:52 PM EST
+14:54:52.348 INFO  VariantFiltration - ------------------------------------------------------------
+14:54:52.348 INFO  VariantFiltration - ------------------------------------------------------------
+14:54:52.349 INFO  VariantFiltration - HTSJDK Version: 4.1.3
+14:54:52.349 INFO  VariantFiltration - Picard Version: 3.3.0
+14:54:52.349 INFO  VariantFiltration - Built for Spark Version: 3.5.0
+14:54:52.351 INFO  VariantFiltration - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:54:52.352 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:54:52.352 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:54:52.352 INFO  VariantFiltration - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:54:52.352 INFO  VariantFiltration - Deflater: IntelDeflater
+14:54:52.352 INFO  VariantFiltration - Inflater: IntelInflater
+14:54:52.352 INFO  VariantFiltration - GCS max retries/reopens: 20
+14:54:52.352 INFO  VariantFiltration - Requester pays: disabled
+14:54:52.353 INFO  VariantFiltration - Initializing engine
+14:54:52.522 INFO  FeatureManager - Using codec VCFCodec to read file file:///sciclone/scr10/jbusbin/yeast_vir_proj_output/raw_vcf/B02-A8a2-2338_S5_L002_R1_001.gatk.vcf
+14:54:52.587 INFO  VariantFiltration - Done initializing engine
+14:54:52.752 INFO  ProgressMeter - Starting traversal
+14:54:52.752 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+14:54:52.784 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.786 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.786 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.787 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.787 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.796 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.839 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.840 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.841 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.845 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.850 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.855 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.859 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.859 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.859 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.860 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.861 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.861 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.942 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.954 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.967 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.967 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.967 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.967 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.969 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.969 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.969 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.969 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.969 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.970 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.970 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.971 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.971 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.971 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.971 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.972 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.972 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.972 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.972 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.982 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.983 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.983 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.983 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.983 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.983 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.984 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.985 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.987 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.987 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.992 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:52.996 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.001 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.010 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.010 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.013 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.019 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.020 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.023 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.026 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.029 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.029 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.030 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.031 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.054 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.068 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.070 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.071 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.076 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.080 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.080 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.080 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.081 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.081 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.082 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.093 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.094 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.100 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.113 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.118 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.120 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.120 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.120 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.121 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.121 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.121 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.145 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.149 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.156 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.169 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.170 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.173 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.173 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.184 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.184 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.184 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.184 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.184 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.186 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.187 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.194 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.195 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.195 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.198 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.199 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.208 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.215 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.215 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.217 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.221 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.223 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.225 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.229 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.230 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.237 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.238 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.239 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.239 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.254 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.260 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.260 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.260 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.266 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.269 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.269 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.270 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.270 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.270 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.271 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.273 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.289 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.289 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.290 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.294 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.294 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.298 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.299 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.303 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.322 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.322 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.324 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.324 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.325 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.325 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.352 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.352 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.352 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.358 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.364 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.370 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.371 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.371 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.383 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.388 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.394 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.404 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.407 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.407 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.407 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.408 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.408 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.414 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.416 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.417 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.418 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.433 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.440 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.441 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.441 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.445 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.449 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.454 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.455 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.457 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.464 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.464 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.465 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.470 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.471 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.472 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.473 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.474 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.475 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.476 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.477 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.478 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.479 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.479 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.479 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.479 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.479 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.480 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.481 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.482 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.483 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.484 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.486 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.487 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.487 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.489 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.489 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.490 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.490 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.492 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.494 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.495 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.497 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.502 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.503 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.504 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.505 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.505 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.508 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.512 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.512 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.512 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.512 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.513 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.514 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.515 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.517 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.519 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.520 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.522 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.522 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.522 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.522 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.523 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.524 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.525 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.525 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.525 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.525 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.526 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.526 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.530 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.534 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.538 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.538 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.538 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.538 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.539 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.539 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.539 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.542 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.566 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.571 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.571 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.572 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.579 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.580 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.580 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.580 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.580 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.581 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.582 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.583 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.585 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.585 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.585 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.586 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.586 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.586 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.586 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.586 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.587 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.587 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.587 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.587 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.597 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.599 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.600 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.601 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.602 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.603 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.604 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.606 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.611 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.611 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.613 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.625 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.628 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.630 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.630 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.635 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.643 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.646 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.647 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.647 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.648 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.648 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.648 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.649 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.652 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.653 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.653 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.653 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.653 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.655 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.656 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.659 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.659 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.660 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.661 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.661 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.661 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.666 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.668 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.669 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.669 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.674 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.675 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.677 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.679 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.681 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.683 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.688 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.689 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.690 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.691 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.691 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.692 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.692 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.692 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.693 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.693 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.693 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.693 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.693 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.694 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.695 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.698 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.699 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.699 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.700 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.700 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.704 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.709 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.712 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.712 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.713 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.717 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.718 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.718 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.733 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.733 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.746 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.750 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.750 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.750 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.750 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.753 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.754 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.754 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.757 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.763 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.765 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.777 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.777 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.777 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.778 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.779 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.779 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.780 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.780 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.781 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.782 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.783 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.787 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.790 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.793 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.801 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.802 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.802 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.803 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.806 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.811 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.812 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.837 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.838 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.839 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.844 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.844 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.844 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.844 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.845 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.847 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.849 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.850 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.851 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.851 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.851 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.852 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.856 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.857 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.862 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.864 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.865 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.868 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.869 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.871 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.881 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.882 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.882 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.882 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.882 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.883 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.884 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.884 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.884 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.884 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.884 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.885 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.886 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.887 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.888 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.888 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.892 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.893 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.893 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.893 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.895 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.900 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.900 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.905 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.906 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.906 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.908 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.909 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:53.914 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.914 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.914 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.915 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.919 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.921 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.922 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.922 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.924 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.929 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.934 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.935 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.935 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.935 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.935 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.935 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.936 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.936 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.937 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.937 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.937 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.946 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.957 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.958 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.959 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.959 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.960 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.960 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.961 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.961 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.961 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.965 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.965 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.968 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.978 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.985 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:53.987 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.002 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.003 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.005 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.009 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.009 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.009 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.011 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.011 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.011 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.015 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.016 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.016 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.016 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.016 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.016 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.018 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.019 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.020 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.020 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.020 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.022 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.023 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.024 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.024 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.024 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.024 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.024 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.025 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.025 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.025 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.026 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.026 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.033 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.033 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.034 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.034 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.035 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.036 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.036 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.037 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.037 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.037 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.041 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.042 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.043 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.047 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.056 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.056 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.057 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.057 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.057 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.058 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.059 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.059 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.060 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.060 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.060 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.065 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.066 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.067 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.068 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.072 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.073 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.077 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.082 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.083 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.085 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.087 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.087 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.087 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.087 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.087 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.090 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.091 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.092 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.096 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.097 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.099 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.101 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.114 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.122 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.123 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.130 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.131 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.138 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.142 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.149 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.150 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.152 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.154 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.174 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.176 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.177 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.177 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.178 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.179 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.180 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.181 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:54.182 WARN  JexlEngine - ![72,86]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.182 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.183 WARN  JexlEngine - ![51,60]: 'QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0;' undefined variable MQRankSum
+14:54:54.186 INFO  ProgressMeter -            16:824124              0.0                 46657        1956268.3
+14:54:54.186 INFO  ProgressMeter - Traversal complete. Processed 46657 total variants in 0.0 minutes.
+14:54:54.232 INFO  VariantFiltration - Shutting down engine
+[November 5, 2026, 2:54:54 PM EST] org.broadinstitute.hellbender.tools.walkers.filters.VariantFiltration done. Elapsed time: 0.03 minutes.
+Runtime.totalMemory()=1140850688
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar SelectVariants -R ./data/reference/Anc8.genome.fasta -V /sciclone/scr10/jbusbin/yeast_vir_proj_output//filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.Filtered.vcf --exclude-filtered -O /sciclone/scr10/jbusbin/yeast_vir_proj_output//filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.FilteredSubset.vcf
+14:54:56.147 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.apache.logging.slf4j.SLF4JServiceProvider@3ca3648]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2a99ca99]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.apache.logging.slf4j.SLF4JServiceProvider@3ca3648]
+14:54:56.271 INFO  SelectVariants - ------------------------------------------------------------
+14:54:56.273 INFO  SelectVariants - The Genome Analysis Toolkit (GATK) v4.6.1.0
+14:54:56.273 INFO  SelectVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:54:56.274 INFO  SelectVariants - Executing as jbusbin@bo20.sciclone.wm.edu on Linux v5.14.0-687.15.1.el9_8.x86_64 amd64
+14:54:56.274 INFO  SelectVariants - Java runtime: Java HotSpot(TM) 64-Bit Server VM v23.0.2+7-58
+14:54:56.274 INFO  SelectVariants - Start Date/Time: November 5, 2026, 2:54:56 PM EST
+14:54:56.274 INFO  SelectVariants - ------------------------------------------------------------
+14:54:56.274 INFO  SelectVariants - ------------------------------------------------------------
+14:54:56.275 INFO  SelectVariants - HTSJDK Version: 4.1.3
+14:54:56.275 INFO  SelectVariants - Picard Version: 3.3.0
+14:54:56.275 INFO  SelectVariants - Built for Spark Version: 3.5.0
+14:54:56.278 INFO  SelectVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:54:56.278 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:54:56.278 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:54:56.278 INFO  SelectVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:54:56.278 INFO  SelectVariants - Deflater: IntelDeflater
+14:54:56.278 INFO  SelectVariants - Inflater: IntelInflater
+14:54:56.279 INFO  SelectVariants - GCS max retries/reopens: 20
+14:54:56.279 INFO  SelectVariants - Requester pays: disabled
+14:54:56.279 INFO  SelectVariants - Initializing engine
+14:54:56.421 INFO  FeatureManager - Using codec VCFCodec to read file file:///sciclone/scr10/jbusbin/yeast_vir_proj_output/filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.Filtered.vcf
+14:54:56.448 INFO  SelectVariants - Done initializing engine
+14:54:56.488 INFO  ProgressMeter - Starting traversal
+14:54:56.488 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+14:54:57.537 INFO  ProgressMeter -            16:824124              0.0                 46657        2676309.8
+14:54:57.537 INFO  ProgressMeter - Traversal complete. Processed 46657 total variants in 0.0 minutes.
+14:54:57.605 INFO  SelectVariants - Shutting down engine
+[November 5, 2026, 2:54:57 PM EST] org.broadinstitute.hellbender.tools.walkers.variantutils.SelectVariants done. Elapsed time: 0.03 minutes.
+Runtime.totalMemory()=1140850688
+Using GATK jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar ValidateVariants -R ./data/reference/Anc8.genome.fasta -V /sciclone/scr10/jbusbin/yeast_vir_proj_output//filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.FilteredSubset.vcf
+14:54:59.506 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/bora/gatk-4.6.1.0/gatk-package-4.6.1.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [org.apache.logging.slf4j.SLF4JServiceProvider@25a5c8e]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@656c5c3]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [org.apache.logging.slf4j.SLF4JServiceProvider@25a5c8e]
+14:54:59.628 INFO  ValidateVariants - ------------------------------------------------------------
+14:54:59.631 INFO  ValidateVariants - The Genome Analysis Toolkit (GATK) v4.6.1.0
+14:54:59.631 INFO  ValidateVariants - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:54:59.631 INFO  ValidateVariants - Executing as jbusbin@bo20.sciclone.wm.edu on Linux v5.14.0-687.15.1.el9_8.x86_64 amd64
+14:54:59.631 INFO  ValidateVariants - Java runtime: Java HotSpot(TM) 64-Bit Server VM v23.0.2+7-58
+14:54:59.632 INFO  ValidateVariants - Start Date/Time: November 5, 2026, 2:54:59 PM EST
+14:54:59.632 INFO  ValidateVariants - ------------------------------------------------------------
+14:54:59.632 INFO  ValidateVariants - ------------------------------------------------------------
+14:54:59.632 INFO  ValidateVariants - HTSJDK Version: 4.1.3
+14:54:59.633 INFO  ValidateVariants - Picard Version: 3.3.0
+14:54:59.633 INFO  ValidateVariants - Built for Spark Version: 3.5.0
+14:54:59.635 INFO  ValidateVariants - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:54:59.636 INFO  ValidateVariants - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:54:59.636 INFO  ValidateVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:54:59.636 INFO  ValidateVariants - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:54:59.636 INFO  ValidateVariants - Deflater: IntelDeflater
+14:54:59.636 INFO  ValidateVariants - Inflater: IntelInflater
+14:54:59.636 INFO  ValidateVariants - GCS max retries/reopens: 20
+14:54:59.636 INFO  ValidateVariants - Requester pays: disabled
+14:54:59.637 INFO  ValidateVariants - Initializing engine
+14:54:59.774 INFO  FeatureManager - Using codec VCFCodec to read file file:///sciclone/scr10/jbusbin/yeast_vir_proj_output/filtered_vcf/B02-A8a2-2338_S5_L002_R1_001.FilteredSubset.vcf
+14:54:59.803 INFO  ValidateVariants - Done initializing engine
+14:54:59.804 WARN  ValidateVariants - IDS validation cannot be done because no DBSNP file was provided
+14:54:59.804 WARN  ValidateVariants - Other possible validations will still be performed
+14:54:59.807 INFO  ProgressMeter - Starting traversal
+14:54:59.807 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+14:54:59.946 INFO  ValidateVariants - Shutting down engine
+[November 5, 2026, 2:54:59 PM EST] org.broadinstitute.hellbender.tools.walkers.variantutils.ValidateVariants done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=167772160
+***********************************************************************
+
+A USER ERROR has occurred: Bad input: We encountered a non-standard non-IUPAC base in the provided input sequence: '13'
+
+***********************************************************************
+Set the system property GATK_STACKTRACE_ON_USER_EXCEPTION (--java-options '-DGATK_STACKTRACE_ON_USER_EXCEPTION=true') to print the stack trace.

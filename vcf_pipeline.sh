@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=armaan_one_line
+#SBATCH --job-name=vcf_pipline 
 #SBATCH --nodes=1 # how many physical machines in the cluster
 #SBATCH --ntasks=1 # how many separate 'tasks' (stick to 1)
-#SBATCH --cpus-per-task=6 # how many cores (bora max is 20)
-#SBATCH --time=120 # d-hh:mm:ss or just No. of minutes
+#SBATCH --cpus-per-task=8 # how many cores (bora max is 20)
+#SBATCH --time=00:30:00 # d-hh:mm:ss or just No. of minutes
 #SBATCH -o oneline_%j.out #STDOUT to file (%j is jobID)
 #SBATCH -e oneline_%j.err #STDERR to file (%j is jobID)
 
@@ -14,10 +14,10 @@ set -ueo pipefail
 # Usage: ./run_pipeline.sh <SAMPLE_NAME> <OUTPUT_DIR>
 # ==============================================================================
 
-SAMPLE="${1:-./data/raw/B02-A8a2-2338_S5_L002_R1_001.fastq}"
+SAMPLE="${1:-"B02-A8a2-2338_S5_L002_R1_001"}"
 OUT_DIR="${2:-/sciclone/scr10/jbusbin/yeast_vir_proj_output/}"
 REF_FASTA="./data/reference/Anc8.genome.fasta"
-FASTQ_R1="${SAMPLE}.fastq.gz"
+FASTQ_R1="./data/raw/B02-A8a2-2338_S5_L002_R1_001.fastq"
 THREADS=8
 
 # Read Group metadata
@@ -98,15 +98,11 @@ gatk MarkDuplicates \
     -I "${BAM_RG}" \
     -O "${BAM_DEDUP}" \
     -M "${DUP_METRICS}" \
-    --REMOVE_DUPLICATES true
+    --REMOVE_DUPLICATES true \
+    --CREATE_INDEX true
 
 # ==============================================================================
-# Step 5: Index Deduplicated BAM (GATK)
-# ==============================================================================
-gatk BuildBamIndex -I "${BAM_DEDUP}"
-
-# ==============================================================================
-# Step 6: Variant Calling (HaplotypeCaller) -> Saves to raw_vcf/
+# Step 5: Variant Calling (HaplotypeCaller) -> Saves to raw_vcf/
 # ==============================================================================
 gatk HaplotypeCaller \
     -R "${REF_FASTA}" \
@@ -131,9 +127,12 @@ gatk VariantFiltration \
     -R "${REF_FASTA}" \
     -V "${RAW_VCF}" \
     -O "${FILTERED_VCF}" \
-    --filter-name "snpsFilter1" \
-    --filter-expression "QD < 2.0 || MQ < 40.0 || FS > 60.0 || SOR > 2.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0"
-
+    --filter-name "FilterQD" --filter-expression "QD < 2.0" \
+    --filter-name "FilterMQ" --filter-expression "MQ < 40.0" \
+    --filter-name "FilterFS" --filter-expression "FS > 60.0" \
+    --filter-name "FilterSOR" --filter-expression "SOR > 2.0" \
+    --filter-name "FilterMQRankSum" --filter-expression "MQRankSum < -12.5" \
+    --filter-name "FilterReadPos" --filter-expression "ReadPosRankSum < -8.0"
 # ==============================================================================
 # Step 8: Subset Filtered Variants (PASS only) -> Saves to filtered_vcf/
 # ==============================================================================
